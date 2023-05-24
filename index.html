@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- import jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Add a scorecard and buttons -->
+  <div id="scorecard">
+    <!-- Add controls for difficulty level and theme -->
+    <div>
+        <label for="difficulty">Difficulty: </label>
+        <select id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+      <div>
+        <button id="theme-switcher">Switch Theme</button>
+      </div>
+      <!-- Add power-up button -->
+      <button id="reveal-button">Reveal Cards</button>
+    <p id="clicks">Clicks: 0</p>
+    <p id="pairs-left">Pairs left: 3</p>
+    <p id="pairs-matched">Pairs matched: 0</p>
+    <p id="total-pairs">Total pairs: 3</p>
+    <p id="timer">Time: 0s</p>
+    <button id="reset-button">Reset</button>
+    <button id="start-button">Start</button>
+  </div>
+  <div id="game_grid">
+    
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
